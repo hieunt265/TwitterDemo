@@ -67,7 +67,7 @@ class TwitterClient: BDBOAuth1SessionManager {
         loginCompletion = completion
         TwitterClient.shared?.deauthorize()
         
-        TwitterClient.shared?.fetchRequestToken(withPath: API_REQUEST_TOKEN, method: "GET", callbackURL: URL(string: "simpleTwitter://"), scope: nil, success: { (request: BDBOAuth1Credential?) in
+        TwitterClient.shared?.fetchRequestToken(withPath: API_REQUEST_TOKEN, method: "GET", callbackURL: URL(string: "TwitterClientHieuNT://"), scope: nil, success: { (request: BDBOAuth1Credential?) in
             
             let authURL = URL(string: "\(self.endPoint)\(self.API_AUTHENTICATE_TOKEN)\(request!.token!)")!
             UIApplication.shared.open(authURL, options: [:], completionHandler: nil)

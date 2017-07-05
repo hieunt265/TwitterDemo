@@ -24,10 +24,12 @@ class NewTweetViewController: UIViewController {
     @IBOutlet weak var countCharacterLabel: UILabel!
     
     var countCharactor = 0
+	
     
     override func viewDidLoad() {
         super.viewDidLoad()
         newTweetTextField.delegate = self
+		
         // Do any additional setup after loading the view.
     }
 
@@ -35,7 +37,7 @@ class NewTweetViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+	
 
     /*
     // MARK: - Navigation
@@ -48,12 +50,14 @@ class NewTweetViewController: UIViewController {
     */
     @IBAction func onCancel(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
+		//self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func onNewTweet(_ sender: UIButton) {
         TwitterClient.shared?.updateNewTweet(tweet: newTweetTextField.text, completion: { (result, error) in
             if (result != nil) {
                 self.dismiss(animated: true, completion: nil)
+				
             }
         })
     }
@@ -79,13 +83,13 @@ extension NewTweetViewController: UITextViewDelegate {
             tweetButton.isEnabled = true
         }
         
-        if newTweetTextField.text.characters.count >= 140 {
-            countCharactor = 140
+        if newTweetTextField.text.characters.count >= 150 {
+            countCharactor = 150
             tweetButton.isEnabled = false
         }else {
             tweetButton.isEnabled = true
         }
-        countCharacterLabel.text = "\(140 - countCharactor)"
+        countCharacterLabel.text = "\(150 - countCharactor)"
         
         
     }

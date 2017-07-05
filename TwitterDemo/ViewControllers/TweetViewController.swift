@@ -14,16 +14,6 @@ class TweetViewController: UIViewController {
     var tweets = [Tweet]()
     let refreshControl = UIRefreshControl()
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
