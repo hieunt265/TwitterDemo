@@ -16,11 +16,6 @@ The following **required** functionality is completed:
 <<<<<<< HEAD
 - [x] User can compose a new tweet by tapping on a compose button.
 - [x] User can tap on a tweet to view it, with controls to retweet, favorite, and reply.
-=======
-- [ ] User can compose a new tweet by tapping on a compose button.
-- [ ] User can tap on a tweet to view it, with controls to retweet, favorite, and reply.
->>>>>>> 86a2925a69e9e8a4003edc264d7424d1fea578d0
-
 The following **optional** features are implemented:
 
 - [ ] When composing, you should have a countdown in the upper right for the tweet limit.
