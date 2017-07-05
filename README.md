@@ -13,8 +13,13 @@ The following **required** functionality is completed:
 - [x] The current signed in user will be persisted across restarts.
 - [x] In the home timeline, user can view tweet with the user profile picture, username, tweet text, and timestamp.  In other words, design the custom cell with the proper Auto Layout settings.  You will also need to augment the model classes.
 - [x] User can pull to refresh.
+<<<<<<< HEAD
 - [x] User can compose a new tweet by tapping on a compose button.
 - [x] User can tap on a tweet to view it, with controls to retweet, favorite, and reply.
+=======
+- [ ] User can compose a new tweet by tapping on a compose button.
+- [ ] User can tap on a tweet to view it, with controls to retweet, favorite, and reply.
+>>>>>>> 86a2925a69e9e8a4003edc264d7424d1fea578d0
 
 The following **optional** features are implemented:
 
